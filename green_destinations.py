@@ -18,6 +18,7 @@ print(df.head())
 # Get a summary of the DataFrame, including data types and non-null values
 print(df.info())
 
+
 # Calculate the attrition rate
 
 # Attrition Rate=((Total Number of Employees)/(Number of Employees Who Left))*100
@@ -28,6 +29,7 @@ attrition_yes = attrition_counts.get('Yes', 0) # Get count of 'Yes' for Attritio
 attrition_rate = (attrition_yes / total_employees) * 100
 
 print(f"Attrition Rate: {attrition_rate:.2f}%")
+
 
 import matplotlib.pyplot as plt
 import seaborn as sns
